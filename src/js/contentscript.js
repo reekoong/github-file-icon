@@ -95,6 +95,7 @@ const update = () => {
         const icon = document.createElement('span');
         if (host === 'github') {
           icon.className = `icon octicon ${className}`;
+          icon.style.opacity = 1;
         } else {
           icon.className = `${className}`;
           icon.style.marginRight = host === 'bitbucket' ? '10px' : '3px';
